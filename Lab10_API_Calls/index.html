@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>API Calls</title>
+</head>
+<body>
+    <!--header/page title-->
+    <header>
+        <h1>JavaScript API Calls</h1>
+    </header>
+    <!--success/error message display-->
+    <p id="form-msg"></p>
+    <!--page content-->
+    <main>
+        <!--fetch data-->
+        <section id="fetch-data">
+            <button id="fetch-btn">Fetch Data with fetch()</button>
+            <button id="XHR-btn">Fetch Data with XHR</button>
+            <h2>Fetched Data</h2>
+            <!--Display data here-->
+            <div id="data-output"></div>
+        </section>
+        <!--input data-->
+        <section id="send-data">
+            <h2>Send Data</h2>
+            <form id="post-form">
+                <input type="text" id="title" placeholder="Enter title" required>
+                <textarea type="text" id="body" placeholder="Enter post data here..." required></textarea>
+                <div id="post-put-btn">
+                    <button type="submit" id="post-btn">Send with POST</button>
+                    <button type="button" id="put-btn">Send with PUT</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>&copy; 2024 Anupa Ragoonanan</p>
+    </footer>    
+</body>
+</html>
